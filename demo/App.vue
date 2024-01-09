@@ -2,13 +2,13 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:53:17
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 16:14:32
+ * @LastEditTime: 2024-01-09 18:27:12
  * @Description: App
 -->
 <script setup lang="ts">
 // import { KButton } from '@keep-design/components';
 // import type { KButtonInstance } from '@keep-design/components'
-import KButton from '@keep-design/components/src/k-button'
+// import KButton from '@keep-design/components/src/k-button'
 </script>
 
 <template>

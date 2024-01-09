@@ -2,13 +2,14 @@
  * @Author: dushuai
  * @Date: 2024-01-09 16:29:26
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 17:45:49
+ * @LastEditTime: 2024-01-09 18:37:05
  * @description: 自动引入插件
  */
 function KeepDesignResolver() {
   return {
     type: "component",
-    resolve: (name: string) => {
+    resolve: (name) => {
+      console.log('name:>> ', name);
       if (name.startsWith('k-')) {
         const partialName = name.substring(2);
         return {
