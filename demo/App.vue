@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:53:17
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 18:27:12
+ * @LastEditTime: 2024-01-09 18:41:01
  * @Description: App
 -->
 <script setup lang="ts">
@@ -13,7 +13,6 @@
 
 <template>
   <div>启动测试</div>
-  <div>默认</div>
   <KButton>引入挂载</KButton>
   <KButton type="primary">引入挂载</KButton>
   <div>主要</div>
