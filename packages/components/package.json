@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "test": "vitest",
+    "build": "vite build",
+    "release": "release-it",
+    "coverage": "vitest run --coverage"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
