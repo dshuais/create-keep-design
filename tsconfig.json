@@ -15,6 +15,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "jsx": "preserve",
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -22,6 +23,19 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
+    "./packages/components/script/**/*.ts",
+    "./packages/components/src/**/*.ts",
+    "./packages/components/src/**/*.tsx",
+    "./packages/components/src/**/*.js",
+    "./packages/components/src/**/*.jsx",
+    "./packages/components/src/**/*.vue",
+    "./packages/components/src/**/*.d.ts",
+    "./packages/components/src/*.d.ts",
     "vite-env.d.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
   ]
 }
