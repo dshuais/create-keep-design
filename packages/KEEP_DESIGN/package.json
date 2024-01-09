@@ -1,0 +1,39 @@
+{
+  "name": "keep-design",
+  "version": "0.0.1-alpha.3",
+  "description": "一个奇怪且有个性的Vue3组件库",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "typings": "types/index.d.ts",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
+  },
+  "keywords": [
+    "keep-design",
+    "vue3组件库",
+    "ui组件库",
+    "组件库",
+    "design",
+    "vue3+typescript",
+    "components",
+    "vue3-components"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "dshuais",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dshuais/keep-design"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://keep-design.dshuais.com/"
+}
