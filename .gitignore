@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 *.zip
 *.rar
+
+# 单元测试报告
+packages/components/coverage/
