@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dshuais/keep-design"
+    "url": "https://github.com/dshuais/create-keep-design"
   },
   "homepage": "https://create-keep-design.dshuais.com/",
   "devDependencies": {
