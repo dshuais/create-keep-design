@@ -2,12 +2,13 @@
  * @Author: dushuai
  * @Date: 2024-01-02 16:11:16
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 10:57:24
+ * @LastEditTime: 2024-01-10 16:34:17
  * @description: viteconfig
  */
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import dts from 'vite-plugin-dts';
+import vueJsx from '@vitejs/plugin-vue-jsx';
 
 export default defineConfig(() => {
   return {
@@ -50,6 +51,9 @@ export default defineConfig(() => {
     },
     plugins: [
       vue(),
+
+      vueJsx(),
+
       dts({
         entryRoot: './src',
         // outDir: ['../KEEP_DESIGN/es/src', '../KEEP_DESIGN/lib/src'],
@@ -83,6 +87,13 @@ export default defineConfig(() => {
           }
         }
       }
-    ]
+    ],
+
+    esbuild: {
+      jsxFactory: 'h',
+      jsxFragment: 'Fragment',
+      include: ['tsx'],
+      jsxInject: "import { h } from 'vue'"
+    }
   }
 });

@@ -1,1 +1,1 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./k-button.vue.js"),u=require("../utils/install.js"),t=u.withInstall(e.default);exports.KButton=t;exports.default=t;
+"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});const e=require("./k-button.js"),u=require("../utils/install.js"),t=u.withInstall(e.default);exports.KButton=t;exports.default=t;

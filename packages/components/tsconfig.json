@@ -1,10 +1,19 @@
 {
   "extends": "../../tsconfig.json",
   "include": [
-    "src",
+    "src"
   ],
   "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
     "moduleResolution": "Node",
-    "baseUrl": "."
+    "baseUrl": "./",
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "jsxImportSource": "vue"
   }
 }

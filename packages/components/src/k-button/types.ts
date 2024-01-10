@@ -2,10 +2,10 @@
  * @Author: dushuai
  * @Date: 2024-01-08 10:40:03
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-08 10:46:20
+ * @LastEditTime: 2024-01-10 16:40:12
  * @description: 组件类型声明文件
  */
-import _Button from './k-button.vue';
+import _Button from './k-button.tsx';
 
 /**
  * 定义instance类型

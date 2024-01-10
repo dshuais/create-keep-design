@@ -1,7 +1,7 @@
-import t from "./k-button.vue.mjs";
+import t from "./k-button.mjs";
 import { withInstall as o } from "../utils/install.mjs";
-const a = o(t);
+const n = o(t);
 export {
-  a as KButton,
-  a as default
+  n as KButton,
+  n as default
 };
