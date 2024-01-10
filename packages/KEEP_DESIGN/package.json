@@ -7,7 +7,8 @@
   "typings": "types/index.d.ts",
   "files": [
     "es",
-    "lib"
+    "lib",
+    "types"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
