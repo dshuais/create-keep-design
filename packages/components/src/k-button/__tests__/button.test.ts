@@ -2,12 +2,12 @@
  * @Author: dushuai
  * @Date: 2024-01-05 12:25:19
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 16:25:10
+ * @LastEditTime: 2024-01-10 21:57:49
  * @description: 测试button组件
  */
 import { describe, expect, it } from 'vitest';
 import { mount } from '@vue/test-utils';
-import Button from '../k-button.vue';
+import Button from '../k-button.tsx';
 
 // The component to test
 describe('test-k-button', () => {
@@ -28,6 +28,6 @@ describe('test-k-button', () => {
         type: 'primary'
       }
     });
-    expect(wrapper.classes()).toContain('k-button--primary');
+    expect(wrapper.classes()).toContain('keep-button--primary');
   });
 });

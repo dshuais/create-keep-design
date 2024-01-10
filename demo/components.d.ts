@@ -7,6 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    KButton: typeof import('@keep-design/components/src')['KButton']
+    KButton: typeof import('keep-design/es')['KButton']
   }
 }

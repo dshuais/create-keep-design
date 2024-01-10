@@ -86,12 +86,12 @@ importers:
 
   demo:
     devDependencies:
+      '@keep-design/auto-import-resolver':
+        specifier: workspace:0.0.1-alpha.1
+        version: link:../packages/resolver
       '@keep-design/components':
         specifier: workspace:^
         version: link:../packages/components
-      '@keep-design/resolver':
-        specifier: workspace:^
-        version: link:../packages/resolver
       unplugin-auto-import:
         specifier: ^0.17.3
         version: 0.17.3

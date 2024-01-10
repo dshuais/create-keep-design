@@ -15,6 +15,7 @@
     "jsx": "preserve",
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
-    "jsxImportSource": "vue"
+    "jsxImportSource": "vue",
+    "declaration": true
   }
 }
