@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-09 16:29:26
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 20:35:31
+ * @LastEditTime: 2024-01-10 21:37:31
  * @description: 自动引入插件
  */
 
@@ -15,27 +15,27 @@ interface KeepDesignResolverOptions {
   module?: "esm" | "cjs";
 }
 
-function KeepDesignResolver(options: KeepDesignResolverOptions) {
+function getModuleType(options: KeepDesignResolverOptions): string {
+  const { module = 'esm' } = options;
+  return module === 'cjs' ? 'lib' : 'es';
+}
+
+export function KeepDesignResolver(options: KeepDesignResolverOptions = {}) {
+  const moduleType = getModuleType(options);
+
   return {
-    type: "component",
+    type: "component" as const,
     resolve: (name: string) => {
-      console.log("options:>> ", options);
-      console.log("name:>> ", name);
+      // console.log("options:>> ", options);
+      // console.log("name:>> ", name);
       if (name.startsWith("K")) {
         const partialName = name.substring(1);
-        // console.log('return:>> ', partialName, {
-        //   name: 'K' + partialName,
-        //   from: '@keep-design/components/src' // 这里应该是 k-design 的路径
-        // });
         return {
           name: "K" + partialName,
-          from: "@keep-design/components/src", // 这里应该是 k-design 的路径
+          // from: "@keep-design/components/src"
+          from: `keep-design/${moduleType}`,
         };
       }
     },
   };
 }
-
-module.exports = {
-  KeepDesignResolver,
-};

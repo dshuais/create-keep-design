@@ -56,6 +56,9 @@ importers:
       release-it:
         specifier: ^17.0.1
         version: 17.0.1(typescript@5.3.3)
+      rimraf:
+        specifier: ^5.0.5
+        version: 5.0.5
       sass:
         specifier: ^1.69.7
         version: 1.69.7
@@ -6629,6 +6632,14 @@ packages:
     dependencies:
       glob: 7.2.3
     dev: false
+
+  /rimraf@5.0.5:
+    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      glob: 10.3.10
+    dev: true
 
   /rollup@4.9.4:
     resolution: {integrity: sha512-2ztU7pY/lrQyXSCnnoU4ICjT/tCG9cdH3/G25ERqE3Lst6vl2BCM5hL2Nw+sslAvAf+ccKsAq1SkKQALyqhR7g==}

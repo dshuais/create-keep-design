@@ -1,10 +1,11 @@
 {
-  "name": "@keep-design/resolver",
+  "name": "@keep-design/auto-import-resolver",
+  "private": false,
   "version": "0.0.1-alpha.1",
   "description": "keep-design auto import resolver based on unplugin-vue-components",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.mjs",
-  "typings": "dist/index.d.ts",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.mjs",
+  "typings": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -12,10 +13,25 @@
       "require": "./dist/index.cjs.js"
     }
   },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "clean": "rimraf ./dist",
     "build:bundle": "node ./build.js",
-    "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly"
+    "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly",
+    "build": "pnpm clean && pnpm build:bundle && pnpm build:types"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dshuais/keep-design",
+    "directory": "packages/resolver"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://keep-design.dshuais.com/",
   "keywords": [],
   "author": "dshuais",
   "license": "MIT"

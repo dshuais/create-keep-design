@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:52:01
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 18:22:54
+ * @LastEditTime: 2024-01-10 21:16:49
  * @Description: vite.config
  */
 import { defineConfig } from 'vite';
@@ -16,16 +16,12 @@ export default defineConfig({
     vue(),
     Components({
       resolvers: [
-        KeepDesignResolver({
-          module: 'esm'
-        })
+        KeepDesignResolver()
       ]
     }),
     AutoImport({
       resolvers: [
-        KeepDesignResolver({
-          module: 'esm'
-        })
+        KeepDesignResolver()
       ]
     })
   ]
