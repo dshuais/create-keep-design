@@ -1,6 +1,6 @@
 {
   "name": "keep-design",
-  "version": "0.0.1-alpha.3",
+  "version": "0.0.1",
   "description": "一个奇怪且有个性的Vue3组件库",
   "main": "lib/index.js",
   "module": "es/index.mjs",
