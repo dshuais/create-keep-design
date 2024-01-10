@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "build:keep": "gulp -f ./packages/components/script/build/index.js",
     "publish:keep": "gulp -f ./packages/components/script/publish/index.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "commitlint": "commitlint --edit"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
