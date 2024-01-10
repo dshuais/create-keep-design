@@ -1,15 +1,27 @@
-import { defineComponent as n, createVNode as t } from "vue";
-import e from "./style/k-button.module.css";
-const s = /* @__PURE__ */ n({
+import { defineComponent as r, createVNode as i } from "vue";
+import { cln as l } from "../utils/create.mjs";
+import "./style/index.css";
+const s = /* @__PURE__ */ r({
   name: "k-button",
-  setup() {
-    function o() {
-      console.log("点击");
+  props: {
+    type: {
+      type: String,
+      required: !1
     }
-    return () => t("button", {
-      class: e["k-button"],
-      onClick: o
-    }, [t("slot", null, null)]);
+  },
+  emits: ["click"],
+  setup(e, {
+    emit: n,
+    slots: t
+  }) {
+    const o = l("button", [e.type]);
+    function c() {
+      n("click");
+    }
+    return () => i("button", {
+      class: o,
+      onClick: c
+    }, [t.default ? t.default() : "default"]);
   }
 });
 export {

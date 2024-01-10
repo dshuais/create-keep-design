@@ -1,4 +1,4 @@
-.k-button {
+.keep-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -16,16 +16,16 @@
   font-size: 14px;
   border-radius: 4px;
 }
-.k-button:hover {
+.keep-button:hover {
   color: #000;
 }
 
-.k-button--primary {
+.keep-button--primary {
   color: #fff;
   background-color: #409eff;
   border-color: #409eff;
 }
-.k-button--primary:hover {
+.keep-button--primary:hover {
   background: #66b1ff;
   border-color: #66b1ff;
   color: #fff;

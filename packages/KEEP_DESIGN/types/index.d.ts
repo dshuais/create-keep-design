@@ -5,11 +5,35 @@ import { JSX } from 'vue/jsx-runtime';
 import type { Plugin as Plugin_2 } from 'vue';
 import { PublicProps } from 'vue';
 
-declare const _default: DefineComponent<{}, () => JSX.Element, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>;
+declare const _default: DefineComponent<{
+    type: {
+        type: StringConstructor;
+        required: false;
+    };
+}, () => JSX.Element, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "click"[], "click", PublicProps, Readonly<ExtractPropTypes<{
+    type: {
+        type: StringConstructor;
+        required: false;
+    };
+}>> & {
+    onClick?: ((...args: any[]) => any) | undefined;
+}, {}, {}>;
 
 declare const _default_2: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>;
 
-export declare const KButton: SFCWithInstall<DefineComponent<{}, () => JSX.Element, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>> & Record<string, any>;
+export declare const KButton: SFCWithInstall<DefineComponent<{
+    type: {
+        type: StringConstructor;
+        required: false;
+    };
+}, () => JSX.Element, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, "click"[], "click", PublicProps, Readonly<ExtractPropTypes<{
+    type: {
+        type: StringConstructor;
+        required: false;
+    };
+}>> & {
+    onClick?: ((...args: any[]) => any) | undefined;
+}, {}, {}>> & Record<string, any>;
 
 /**
  * 定义emit类型

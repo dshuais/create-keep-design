@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:53:17
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 18:41:01
+ * @LastEditTime: 2024-01-10 17:30:02
  * @Description: App
 -->
 <script setup lang="ts">
@@ -22,3 +22,8 @@
   <k-button type="primary">全局挂载</k-button>
   <k-button>123</k-button>
 </template>
+<style scoped lang="scss">
+.k-button {
+  color: red;
+}
+</style>

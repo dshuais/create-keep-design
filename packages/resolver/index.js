@@ -2,10 +2,11 @@
  * @Author: dushuai
  * @Date: 2024-01-09 16:29:26
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 18:42:11
+ * @LastEditTime: 2024-01-10 17:21:49
  * @description: 自动引入插件
  */
-function KeepDesignResolver() {
+function KeepDesignResolver(options) {
+  console.log('options:>> ', options);
   return {
     type: "component",
     resolve: (name) => {
