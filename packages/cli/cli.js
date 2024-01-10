@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-10 09:33:53
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 10:01:01
+ * @LastEditTime: 2024-01-10 10:04:28
  * @description: 模板命令
  */
 import commandLineArgs from "command-line-args";
@@ -92,7 +92,7 @@ const options = commandLineArgs(optionDefinitions)
 const getCloneTemplate = async () => {
   const res = await prompts(promptsOptions)
   if (!res.name || !res.template) return
-  gitClone(`direct:${remoteList[res.template]}`, res.name, { clone: true })
+  gitClone(`direct:${remoteList[res.template]}`, res.name, { clone: true }, res.template)
 }
 
 /**
