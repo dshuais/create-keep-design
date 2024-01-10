@@ -26,7 +26,7 @@
 ## Install
 
 ```bash
-pnpm init create-keepdesign
+pnpm create keepdesign
 ```
 
 ## Template
