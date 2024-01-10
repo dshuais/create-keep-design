@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-02 16:11:16
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 16:34:17
+ * @LastEditTime: 2024-01-10 16:46:53
  * @description: viteconfig
  */
 import { defineConfig } from 'vite';
@@ -89,11 +89,11 @@ export default defineConfig(() => {
       }
     ],
 
-    esbuild: {
-      jsxFactory: 'h',
-      jsxFragment: 'Fragment',
-      include: ['tsx'],
-      jsxInject: "import { h } from 'vue'"
-    }
+    // esbuild: {
+    //   jsxFactory: 'h',
+    //   jsxFragment: 'Fragment',
+    //   include: ['tsx'],
+    //   jsxInject: "import { h } from 'vue'"
+    // }
   }
 });
