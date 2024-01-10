@@ -1,0 +1,35 @@
+{
+  "name": "create-keepdesign",
+  "version": "0.0.3",
+  "description": "一个快速生成组件库搭建环境的脚手架",
+  "main": "index.js",
+  "bin": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "keep-design",
+    "vue3组件库",
+    "模板",
+    "脚手架",
+    "components",
+    "create-keep-design"
+  ],
+  "author": "dshuais",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dshuais/keep-design"
+  },
+  "homepage": "https://create-keep-design.dshuais.com/",
+  "devDependencies": {
+    "chalk": "^5.3.0",
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
+    "download-git-repo": "^3.0.2",
+    "ora": "^8.0.1",
+    "prompts": "^2.4.2"
+  }
+}
