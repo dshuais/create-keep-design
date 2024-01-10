@@ -2,15 +2,25 @@
  * @Author: dushuai
  * @Date: 2024-01-09 16:29:26
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 17:21:49
+ * @LastEditTime: 2024-01-10 18:44:41
  * @description: 自动引入插件
  */
-function KeepDesignResolver(options) {
-  console.log('options:>> ', options);
+
+interface KeepDesignResolverOptions {
+  /**
+   * Set the referenced module type.
+   *
+   * @default 'esm'
+   */
+  module?: 'esm' | 'cjs';
+}
+
+function KeepDesignResolver(options: KeepDesignResolverOptions) {
   return {
     type: "component",
-    resolve: (name) => {
-      // console.log('name:>> ', name);
+    resolve: (name: string) => {
+      console.log('options:>> ', options);
+      console.log('name:>> ', name);
       if (name.startsWith('K')) {
         const partialName = name.substring(1);
         // console.log('return:>> ', partialName, {

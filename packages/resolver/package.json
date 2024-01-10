@@ -2,7 +2,10 @@
   "name": "@keep-design/resolver",
   "version": "1.0.0",
   "description": "组件库自动导入插件",
-  "main": "./index",
+  "main": "./index.ts",
+  "scripts": {
+    "build": "node ./build.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
