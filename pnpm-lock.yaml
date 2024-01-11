@@ -130,9 +130,18 @@ importers:
 
   test:
     devDependencies:
+      '@keep-design/auto-import-resolver':
+        specifier: workspace:0.0.1-alpha.1
+        version: link:../packages/resolver
       keep-design:
         specifier: workspace:^
         version: link:../packages/KEEP_DESIGN
+      unplugin-auto-import:
+        specifier: ^0.17.3
+        version: 0.17.3
+      unplugin-vue-components:
+        specifier: ^0.26.0
+        version: 0.26.0(vue@3.4.6)
 
 packages:
 
@@ -1538,7 +1547,7 @@ packages:
     dependencies:
       '@vue/compiler-ssr': 3.4.6
       '@vue/shared': 3.4.6
-      vue: 3.4.6(typescript@5.3.3)
+      vue: 3.4.6
     dev: true
 
   /@vue/shared@3.4.6:
@@ -7706,7 +7715,7 @@ packages:
       minimatch: 9.0.3
       resolve: 1.22.8
       unplugin: 1.6.0
-      vue: 3.4.6(typescript@5.3.3)
+      vue: 3.4.6
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -8052,6 +8061,21 @@ packages:
       '@vue/language-core': 1.8.27(typescript@5.3.3)
       semver: 7.5.4
       typescript: 5.3.3
+    dev: true
+
+  /vue@3.4.6:
+    resolution: {integrity: sha512-gAzw5oP0/h34/yq1LjLNpn4wrCKYMuWp2jbs/JirFiZAFWYhd9jTkXp4wIi5ApgMJrMgD6YFyyXwKsqFYR31IQ==}
+    peerDependencies:
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/compiler-dom': 3.4.6
+      '@vue/compiler-sfc': 3.4.6
+      '@vue/runtime-dom': 3.4.6
+      '@vue/server-renderer': 3.4.6(vue@3.4.6)
+      '@vue/shared': 3.4.6
     dev: true
 
   /vue@3.4.6(typescript@5.3.3):
