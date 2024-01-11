@@ -22,9 +22,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "types": [
-      "./components.d.ts",
+      // "./components.d.ts",
       // "./auto-imports.d.ts",
-      // "keep-design/global"
+      // "keep-design/global",
+      // "keep-design/global.d.ts"
     ]
   },
 }

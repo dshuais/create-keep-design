@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:52:01
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-11 11:47:48
+ * @LastEditTime: 2024-01-11 14:47:23
  * @Description: vite.config
  */
 import { defineConfig } from 'vite';
