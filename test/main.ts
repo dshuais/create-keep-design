@@ -2,13 +2,13 @@
  * @Author: dushuai
  * @Date: 2024-01-02 15:44:32
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-09 18:40:19
+ * @LastEditTime: 2024-01-11 11:31:00
  * @description: 入口
  */
 import { createApp } from 'vue';
 import App from './App.vue';
-// import keepDesign from '@keep-design/components'
-// import { KButton } from '@keep-design/components/src/k-button'
+import { KButton } from 'keep-design'
+// import keepDesign from 'keep-design'
 // console.log(KButton);
 // console.log(keepDesign);
 
@@ -16,7 +16,7 @@ import App from './App.vue';
 
 const app = createApp(App);
 
-// app.use(keepDesign);
-// app.use(KButton)
+// app.use(keepDesign)
+app.use(KButton)
 // .use(KTypewriter)
 app.mount('#app');

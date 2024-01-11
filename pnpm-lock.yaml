@@ -128,6 +128,12 @@ importers:
 
   packages/utils: {}
 
+  test:
+    devDependencies:
+      keep-design:
+        specifier: workspace:^
+        version: link:../packages/KEEP_DESIGN
+
 packages:
 
   /@75lb/deep-merge@1.1.1:

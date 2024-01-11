@@ -1,3 +1,4 @@
+import { App } from 'vue';
 import { ComponentOptionsMixin } from 'vue';
 import { DefineComponent } from 'vue';
 import { ExtractPropTypes } from 'vue';
@@ -5,7 +6,12 @@ import { JSX } from 'vue/jsx-runtime';
 import type { Plugin as Plugin_2 } from 'vue';
 import { PublicProps } from 'vue';
 
-declare const _default: DefineComponent<{
+declare const _default: {
+    install: (app: App) => void;
+};
+export default _default;
+
+declare const _default_2: DefineComponent<{
     type: {
         type: StringConstructor;
         required: false;
@@ -19,7 +25,7 @@ declare const _default: DefineComponent<{
     onClick?: ((...args: any[]) => any) | undefined;
 }, {}, {}>;
 
-declare const _default_2: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>;
+declare const _default_3: DefineComponent<{}, {}, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, PublicProps, Readonly<ExtractPropTypes<{}>>, {}, {}>;
 
 export declare const KButton: SFCWithInstall<DefineComponent<{
     type: {
@@ -45,7 +51,7 @@ export declare type KButtonEmits = {
 /**
  * 定义instance类型
  */
-export declare type KButtonInstance = InstanceType<typeof _default>;
+export declare type KButtonInstance = InstanceType<typeof _default_2>;
 
 /**
  * 定义props类型
@@ -66,7 +72,7 @@ export declare type KTypewriterEmits = {
 /**
  * 定义instance类型
  */
-export declare type KTypewriterInstance = InstanceType<typeof _default_2>;
+export declare type KTypewriterInstance = InstanceType<typeof _default_3>;
 
 /**
  * 定义props类型

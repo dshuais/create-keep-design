@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-02 16:11:16
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-10 16:46:53
+ * @LastEditTime: 2024-01-11 11:25:21
  * @description: viteconfig
  */
 import { defineConfig } from 'vite';
@@ -55,18 +55,18 @@ export default defineConfig(() => {
       vueJsx(),
 
       dts({
-        entryRoot: './src',
+        entryRoot: './',
         // outDir: ['../KEEP_DESIGN/es/src', '../KEEP_DESIGN/lib/src'],
         outDir: ['../KEEP_DESIGN/types'],
         // 指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
         // tsconfigPath: '../../tsconfig.json',
         staticImport: true,
         rollupTypes: true, // 如果你希望将所有的类型合并到一个文件中
-        clearPureImport: false, // 是否移除 `import 'xxx'` 默认true
+        // clearPureImport: false, // 是否移除 `import 'xxx'` 默认true
       }),
       {
         name: 'style',
-        generateBundle(options, bundle) {
+        generateBundle(_options, bundle) {
           // 这里可以获取打包后的文件目录以及代码code
           const keys: (keyof typeof bundle)[] = Object.keys(bundle);
 
