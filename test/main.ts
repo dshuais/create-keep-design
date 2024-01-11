@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-02 15:44:32
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-11 11:40:20
+ * @LastEditTime: 2024-01-11 12:30:02
  * @description: 入口
  */
 import { createApp } from 'vue';
