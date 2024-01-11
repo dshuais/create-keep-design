@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-08 10:30:54
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-08 18:33:55
+ * @LastEditTime: 2024-01-11 17:49:55
  * @description: 组件导入方法
  */
 import type { App, Plugin } from 'vue';
@@ -36,7 +36,6 @@ export const withInstall = <T, E extends Record<string, any>>(main: T, extra?: E
  */
 export const makeInstaller = (components: Plugin[] = []) => {
   const install = (app: App) => {
-    console.log(components)
     components.forEach((c) => app.use(c))
   }
   return {

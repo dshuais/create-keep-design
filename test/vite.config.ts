@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2023-12-30 17:52:01
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-11 14:47:23
+ * @LastEditTime: 2024-01-11 16:01:48
  * @Description: vite.config
  */
 import { defineConfig } from 'vite';
@@ -14,11 +14,11 @@ import { KeepDesignResolver } from "@keep-design/auto-import-resolver"
 export default defineConfig({
   plugins: [
     vue(),
-    Components({
-      resolvers: [
-        KeepDesignResolver()
-      ]
-    }),
+    // Components({
+    //   resolvers: [
+    //     KeepDesignResolver()
+    //   ]
+    // }),
     // AutoImport({
     //   resolvers: [
     //     KeepDesignResolver()
