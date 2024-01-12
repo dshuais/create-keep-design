@@ -4,4 +4,4 @@ packages:
   - 'demo/*'
 
   # exclude packages that are inside test directories
-  - '!./test'
+  - '!./test/*'
