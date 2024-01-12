@@ -43,6 +43,15 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
+/**
+ * 重写vuepress主题的默认主题色
+ */
+:root {
+  --vp-c-indigo-1: #1d5cd9;
+  --vp-c-indigo-2: #2971e0;
+  --vp-c-indigo-3: #3787e8;
+}
+
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
@@ -94,16 +103,16 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #ee443f 30%,
-    #ffbabb
+    #1c5ad8 30%,
+    #5cd8f4
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #f28d8a 50%,
-    #ffbabb 50%
+    #4bbdf7 50%,
+    #51c9fb 50%
   );
-  --vp-home-hero-image-filter: blur(40px);
+  --vp-home-hero-image-filter: blur(38px);
 }
 
 /* @media (min-width: 640px) {
@@ -155,21 +164,21 @@
 
 @keyframes logo-wave {
   0% {
-    transform: translate(-52%, -42%);
+    transform: translate(-48%, -42%);
   }
   20% {
-    transform: translate(-68%, -42%);
+    transform: translate(-63%, -42%);
   }
   40% {
-    transform: translate(-68%, -58%);
+    transform: translate(-63%, -58%);
   }
   60% {
-    transform: translate(-62%, -42%);
+    transform: translate(-58%, -42%);
   }
   80% {
-    transform: translate(-52%, -58%);
+    transform: translate(-48%, -58%);
   }
   100% {
-    transform: translate(-52%, -42%);
+    transform: translate(-48%, -42%);
   }
 }
