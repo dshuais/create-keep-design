@@ -4,21 +4,30 @@ layout: home
 
 hero:
   name: 'Keep Design'
-  text: 'A VitePress Site'
-  tagline: My great project tagline
+  text: '极具个性的前端组件库'
+  tagline: UI Components built on Vue 3
+  image:
+    src: /image/logo.png
+    alt: Keep Design
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: Get Started
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: Components
+      link: /api-examples
+    - theme: alt
+      text: View on GitHub
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 按需引入
+    icon: 💡
+    details: 每一个组件都可单独引入，并有着良好的 tree-shaking 优化
+  - title: 支持TypeScript
+    icon: 🖖
+    details: 使用 Typescript 构建，提供良好的组件类型系统
+  - title: 配套完善
+    icon: 🛠️
+    details: 配套的插件、文档、示例、测试用例等，让开发更轻松
 ---
