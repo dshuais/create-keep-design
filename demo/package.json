@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@keep-design/auto-import-resolver": "workspace:^",
+    "keep-design": "workspace:^",
     "unplugin-auto-import": "^0.17.3",
     "unplugin-vue-components": "^0.26.0"
   }
