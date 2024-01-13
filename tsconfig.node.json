@@ -8,6 +8,6 @@
     "jsx": "preserve"
   },
   "include": [
-    "./packages/components/vite.config.ts"
+    "./packages/keep-design/vite.config.ts"
   ],
 }

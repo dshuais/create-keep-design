@@ -26,14 +26,14 @@
     "declaration": true
   },
   "include": [
-    "./packages/components/script/**/*.ts",
-    "./packages/components/src/**/*.ts",
-    "./packages/components/src/**/*.tsx",
-    "./packages/components/src/**/*.js",
-    "./packages/components/src/**/*.jsx",
-    "./packages/components/src/**/*.vue",
-    "./packages/components/src/**/*.d.ts",
-    "./packages/components/src/*.d.ts",
+    "./packages/keep-design/script/**/*.ts",
+    "./packages/keep-design/src/**/*.ts",
+    "./packages/keep-design/src/**/*.tsx",
+    "./packages/keep-design/src/**/*.js",
+    "./packages/keep-design/src/**/*.jsx",
+    "./packages/keep-design/src/**/*.vue",
+    "./packages/keep-design/src/**/*.d.ts",
+    "./packages/keep-design/src/*.d.ts",
     "vite-env.d.ts"
   ],
   "references": [
