@@ -1,6 +1,6 @@
 {
   "name": "@keep-design/use",
-  "version": "1.0.0",
+  "version": "0.0.1-alpha.1",
   "description": "keep-design Composition API",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.mjs",
