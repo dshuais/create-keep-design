@@ -1,0 +1,34 @@
+{
+  "name": "@keep-design/use",
+  "version": "1.0.0",
+  "description": "keep-design Composition API",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.mjs",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.mjs",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "dev": "node ./build.js -w",
+    "build:types": "tsc -p ./tsconfig.json --emitDeclarationOnly",
+    "build:bundle": "node ./build.js",
+    "build": "pnpm clean && pnpm build:bundle && pnpm build:types"
+  },
+  "keywords": [],
+  "author": "dshuais",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dshuais/keep-design.git"
+  },
+  "homepage": "https://keep-design.dshuais.com/"
+}
