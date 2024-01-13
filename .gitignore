@@ -26,4 +26,4 @@ dist-ssr
 *.rar
 
 # 单元测试报告
-packages/components/coverage/
+packages/keep-design/coverage/
