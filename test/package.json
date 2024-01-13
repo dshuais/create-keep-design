@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@keep-design/auto-import-resolver": "^0.0.1",
+    "@keep-design/use": "0.0.1-alpha.1",
     "keep-design": "^0.0.2",
     "unplugin-auto-import": "^0.17.3",
     "unplugin-vue-components": "^0.26.0",

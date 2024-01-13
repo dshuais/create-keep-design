@@ -11,6 +11,9 @@ importers:
       '@keep-design/auto-import-resolver':
         specifier: ^0.0.1
         version: 0.0.1
+      '@keep-design/use':
+        specifier: 0.0.1-alpha.1
+        version: 0.0.1-alpha.1
       keep-design:
         specifier: ^0.0.2
         version: 0.0.2
@@ -273,6 +276,10 @@ packages:
 
   /@keep-design/auto-import-resolver@0.0.1:
     resolution: {integrity: sha512-iD8IaWNh2bDIgpHk/r1QvHPRAeaoZVsD6GkX91uxoWA+tc2iOD1+37EpPYEWaJH5ovvvKBu39i98Nn5l8rTh7g==}
+    dev: true
+
+  /@keep-design/use@0.0.1-alpha.1:
+    resolution: {integrity: sha512-9218tCSHb6/hQ6Fsi/sPVzuosoLv77/RL/3Ae6jVav2IOGZnzQjnQLVKz+b9QYO19vGfUa310Hs+dY2fmbywQQ==}
     dev: true
 
   /@nodelib/fs.scandir@2.1.5:

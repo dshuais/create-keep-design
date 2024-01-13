@@ -12,12 +12,22 @@
 // import { KButton } from 'keep-design'
 import type { KButtonInstance } from 'keep-design'
 import { onMounted, ref } from 'vue';
+import { useToggle, formatDate } from '@keep-design/use'
 
 const buttonRef = ref<KButtonInstance>()
 
 onMounted(() => {
   console.log('buttonRef:>> ', buttonRef.value);
+  console.log('时间:>> ', formatDate(new Date(), 'yyyy-MM-dd HH:mm:ss EEE qq'))
 })
+
+const [toggle, setToggle] = useToggle(true)
+console.log('toggle:>> ', toggle.value)
+
+function handleClick() {
+  setToggle(!toggle.value)
+  console.log('toggle:>> ', toggle.value)
+}
 
 
 </script>
@@ -30,7 +40,7 @@ onMounted(() => {
   <KButton type="primary">引入挂载</KButton>
 
   <!-- <div>全局挂载</div> -->
-  <k-button ref="buttonRef" type="primary">全局挂载</k-button>
+  <k-button ref="buttonRef" type="primary" @click="handleClick">全局挂载</k-button>
   <k-button>123</k-button>
 </template>
 <style scoped lang="scss">
