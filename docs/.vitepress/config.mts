@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-import { nav } from './layout'
+import { nav, sidebar } from './layout'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,15 +11,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+    sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/dshuais/keep-design' }
