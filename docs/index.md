@@ -15,7 +15,7 @@ hero:
       link: /guide/002_getting-started
     - theme: alt
       text: Components
-      link: /api/
+      link: /components/
     - theme: alt
       text: View on GitHub
       link: https://github.com/dshuais/keep-design
