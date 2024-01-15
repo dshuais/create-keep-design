@@ -108,21 +108,22 @@ const demoSourceUrl = 'https://github.com/'
           </button>
         </ElTooltip>
       </div>
+
+      <ElCollapseTransition>
+        <SourceCode v-show="sourceVisible" :source="source" />
+      </ElCollapseTransition>
+
+      <Transition name="k-fade-in-linear">
+        <div v-show="sourceVisible" class="example-float-control" tabindex="0" role="button"
+          @click="toggleSourceVisible()">
+          <ElIcon :size="16">
+            <CaretTop />
+          </ElIcon>
+          <span>隐藏代码</span>
+        </div>
+      </Transition>
+
     </div>
-
-    <ElCollapseTransition>
-      <SourceCode v-show="sourceVisible" :source="source" />
-    </ElCollapseTransition>
-
-    <Transition name="k-fade-in-linear">
-      <div v-show="sourceVisible" class="example-float-control" tabindex="0" role="button" @click="toggleSourceVisible()">
-        <ElIcon :size="16">
-          <CaretTop />
-        </ElIcon>
-        <span>隐藏代码</span>
-      </div>
-    </Transition>
-
   </ClientOnly>
 </template>
 <style scoped lang="scss">
@@ -179,11 +180,11 @@ const demoSourceUrl = 'https://github.com/'
     border-top: 1px solid var(--border-color);
     height: 44px;
     box-sizing: border-box;
-    background-color: var(--bg-color, #fff);
+    background-color: var(--vp-c-bg);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     margin-top: -1px;
-    color: var(--el-text-color-secondary);
+    color: var(--vp-c-text-2);
     cursor: pointer;
     position: sticky;
     left: 0;
@@ -197,7 +198,7 @@ const demoSourceUrl = 'https://github.com/'
     }
 
     &:hover {
-      color: var(--el-color-primary);
+      color: var(--vp-c-brand-1);
     }
   }
 }

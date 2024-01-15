@@ -1,10 +1,3 @@
-<!--
- * @Author: dushuai
- * @Date: 2024-01-15 15:56:53
- * @LastEditors: dushuai
- * @LastEditTime: 2024-01-15 15:57:27
- * @description: button basic
--->
 <script lang="ts" setup>
 
 </script>

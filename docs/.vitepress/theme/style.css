@@ -186,3 +186,7 @@ a {
     transform: translate(-48%, -42%);
   }
 }
+
+.content-container .vp-doc h2 {
+  border-top: none;
+}

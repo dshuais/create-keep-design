@@ -1,3 +1,7 @@
+/* https://github.com/antfu/prism-theme-vars */
+@use "prism-theme-vars/base.css";
+@use "prism-theme-vars/marker.css";
+
 :root {
   --border-color: var(--var-border-color);
   --text-color-lighter: var(--var-text-color-lighter);
@@ -9,8 +13,83 @@
   --var-border-color: #ebedf0;
   --var-text-color-lighter: #909399;
   --var-text-color: #303133;
+  --code-bg-color: #f5f7fa;
+
+  --prism-builtin: #3182bd;
+  --prism-comment: #848486;
+  --prism-deleted: #3182bd;
+  --prism-function: #6196cc;
+  --prism-boolean: #c25205;
+  --prism-number: #c25205;
+  --prism-property: #717c11;
+  --prism-punctuation: #a8a9cc;
+  --prism-keyword: #c792ea;
+  --prism-variable: #0b8235;
+  --prism-url-decoration: #67cdcc;
+  --prism-symbol: green;
+  --prism-selector: #0b8235;
 }
 
 html.dark {
   --var-border-color: #4c4d4f;
+  --code-bg-color: #262727;
+
+  --prism-scheme: dark;
+  --prism-foreground: #a6accd;
+  --prism-background: #181818;
+  --prism-comment: #758575;
+  --prism-string: #c3e88d;
+  --prism-literal: #429988;
+  --prism-keyword: #89ddff;
+  --prism-boolean: #6394bf;
+  --prism-number: #6394bf;
+  --prism-variable: #c2b36e;
+  --prism-function: #82aaff;
+  --prism-deleted: #bc6066;
+  --prism-class: #54b1bf;
+  --prism-builtin: var(--el-color-primary-light-3);
+  --prism-property: #c792ea;
+  --prism-namespace: #db889a;
+  --prism-punctuation: #89ddff;
+  --prism-decorator: #bd8f8f;
+  --prism-regex: #ab5e3f;
+  --prism-json-property: #6b8b9e;
+  --prism-line-number: #888888;
+  --prism-line-number-gutter: #eeeeee;
+  --prism-line-highlight-background: #444444;
+  --prism-selection-background: #444444;
+  --prism-inline-background: #2d2d2d;
+}
+
+.content-container .vp-doc .example {
+  [class*="language-"] pre,
+  [class*="language-"] code {
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    hyphens: none;
+  }
+
+  [class*="language-"] pre {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    padding: 0.25rem;
+    background: transparent;
+    overflow-x: auto;
+  }
+
+  [class*="language-"] code {
+    padding: 0;
+    line-height: var(--code-line-height);
+    font-size: var(--code-font-size);
+    color: var(--code-text-color);
+  }
+
+  [class*=language-]:before {
+    font-family: var(--vp-font-family-mono);
+  }
 }

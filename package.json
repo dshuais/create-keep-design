@@ -34,6 +34,7 @@
     "husky": "^8.0.3",
     "markdown-it": "^14.0.0",
     "markdown-it-container": "^4.0.0",
+    "prism-theme-vars": "^0.2.4",
     "prismjs": "^1.29.0",
     "release-it": "^17.0.1",
     "rimraf": "^5.0.5",
