@@ -1,5 +1,13 @@
+/*
+ * @Author: dushuai
+ * @Date: 2024-01-12 15:31:04
+ * @LastEditors: dushuai
+ * @LastEditTime: 2024-01-15 15:04:22
+ * @description: 心平气和
+ */
 import { defineConfig } from 'vitepress'
 import { nav, sidebar } from './layout'
+import { mdPlugin } from './config/plugins'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -49,5 +57,11 @@ export default defineConfig({
   },
 
   // 开启最后更改时间
-  lastUpdated: true
+  lastUpdated: true,
+
+  // 自定义 markdown配置
+  markdown: {
+    lineNumbers: true,
+    config: (md) => mdPlugin(md)
+  }
 })

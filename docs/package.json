@@ -13,14 +13,21 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "vitepress": "1.0.0-rc.36"
-  },
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
         "@algolia/client-search"
       ]
     }
+  },
+  "dependencies": {
+    "consola": "^3.2.3",
+    "escape-html": "^1.0.3",
+    "fast-glob": "^3.3.2",
+    "markdown-it": "^14.0.0",
+    "markdown-it-container": "^4.0.0",
+    "prism-theme-vars": "^0.2.4",
+    "prismjs": "^1.29.0",
+    "vitepress": "1.0.0-rc.36"
   }
 }

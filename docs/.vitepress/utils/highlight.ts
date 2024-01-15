@@ -1,7 +1,16 @@
+/*
+ * @Author: dushuai
+ * @Date: 2024-01-15 10:58:21
+ * @LastEditors: dushuai
+ * @LastEditTime: 2024-01-15 14:17:40
+ * @description: 心平气和
+ */
 import escapeHtml from 'escape-html'
 import prism from 'prismjs'
 let loadLanguages
+
 load(['markup', 'css', 'javascript'])
+
 function wrap(code: string, lang: string): string {
   if (lang === 'text') {
     code = escapeHtml(code)

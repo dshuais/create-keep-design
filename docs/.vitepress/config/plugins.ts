@@ -1,7 +1,14 @@
+/*
+ * @Author: dushuai
+ * @Date: 2024-01-15 10:54:55
+ * @LastEditors: dushuai
+ * @LastEditTime: 2024-01-15 16:02:08
+ * @description: 心平气和
+ */
 import MarkdownIt from 'markdown-it';
 import mdContainer from 'markdown-it-container';
-import type Token from 'markdown-it/lib/token.mjs';
-import type Renderer from 'markdown-it/lib/renderer.mjs'
+import type Token from 'markdown-it/lib/token';
+import type Renderer from 'markdown-it/lib/renderer'
 import path from 'path'
 import fs from 'fs'
 import { highlight } from '../utils/highlight'
@@ -38,7 +45,6 @@ export const mdPlugin = (md: MarkdownIt) => {
       if (tokens[idx].nesting === 1 /* means the tag is opening */) {
         // 拿到描述 Use `type` to define Button's style.
         const description = m && m.length > 1 ? m[1] : ''
-
         // 获取文件路径的 token
         const sourceFileToken = tokens[idx + 2]
         let source = ''
@@ -47,20 +53,18 @@ export const mdPlugin = (md: MarkdownIt) => {
 
         if (sourceFileToken.type === 'inline') {
           // 根据路径读取 examples/button/basic.vue
-          source = fs.readFileSync(
-            path.resolve(__dirname, '../../examples', `${sourceFile}.vue`),
-            'utf-8'
-          )
+          source = fs.readFileSync(path.resolve(__dirname, '../../examples', `${sourceFile}.vue`), 'utf-8')
         }
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
 
-        // 将代码传给 Demo 组件，Demo 组件的封装下面讲
+        // 将代码传给 Demo 组件
         // highlight 的作用就是将代码包裹一下，根据传递的语言加载该语言的样式
-        return `<Demo source="${encodeURIComponent(
-          highlight(source, 'vue')
-        )}" path="${sourceFile}" raw-source="${encodeURIComponent(
-          source
-        )}" description="${encodeURIComponent(localMd.render(description))}">`
+        return `<Demo
+          source="${encodeURIComponent(highlight(source, 'vue'))}"
+          path="${sourceFile}"
+          raw-source="${encodeURIComponent(source)}"
+          description="${encodeURIComponent(localMd.render(description))}"
+        >`
       } else {
         return `</Demo>`
       }

@@ -2,6 +2,7 @@
 import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import { globals } from '../vitepress'
 import './style.css'
 
 export default {
@@ -13,5 +14,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    globals.forEach(([name, value]) => app.provide(name as string, value))
   }
 } satisfies Theme
