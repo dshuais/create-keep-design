@@ -1,5 +1,5 @@
 // https://vitepress.dev/guide/custom-theme
-import { h } from 'vue'
+import { DefineComponent, h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { globals } from '../vitepress'
@@ -14,6 +14,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-    globals.forEach(([name, value]) => app.provide(name as string, value))
+    globals.forEach(([name, comp]) => app.component(name, comp))
   }
 } satisfies Theme
