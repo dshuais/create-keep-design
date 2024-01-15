@@ -11131,7 +11131,18 @@ var compile2 = () => {
 };
 
 export {
+  NOOP,
+  hasOwn,
+  isArray,
+  isDate,
+  isFunction,
+  isString,
+  isObject,
+  isPromise,
+  toRawType,
+  isPlainObject,
   camelize,
+  hyphenate,
   capitalize,
   toHandlerKey,
   normalizeStyle,
@@ -11155,6 +11166,7 @@ export {
   isProxy,
   toRaw,
   markRaw,
+  computed,
   isRef,
   ref,
   shallowRef,
@@ -11255,7 +11267,7 @@ export {
   getCurrentInstance,
   registerRuntimeCompiler,
   isRuntimeOnly,
-  computed2 as computed,
+  computed2,
   h,
   initCustomFormatter,
   withMemo,
@@ -11299,4 +11311,4 @@ export {
 @vue/runtime-dom/dist/runtime-dom.esm-bundler.js:
   (*! #__NO_SIDE_EFFECTS__ *)
 */
-//# sourceMappingURL=chunk-XQC3P4S4.js.map
+//# sourceMappingURL=chunk-SY2H6VO3.js.map

@@ -1,11 +1,16 @@
 :root {
-  --border-color: var(--van-border-color);
+  --border-color: var(--var-border-color);
+  --text-color-lighter: var(--var-text-color-lighter);
+  --text-color: var(--var-text-color);
+  --el-text-color-secondary: var(--var-text-color-secondary);
 }
 
 :root {
-  --van-border-color: #ebedf0;
+  --var-border-color: #ebedf0;
+  --var-text-color-lighter: #909399;
+  --var-text-color: #303133;
 }
 
 html.dark {
-  --van-border-color: #4c4d4f;
+  --var-border-color: #4c4d4f;
 }
