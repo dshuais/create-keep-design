@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: 'Keep Design'
-  text: '极具个性的前端组件库'
+  text: '一款个性化前端组件库'
   tagline: UI component library built on Vue 3 + TypeScript
   image:
     src: /image/logo.png
