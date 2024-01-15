@@ -1,0 +1,11 @@
+:root {
+  --border-color: var(--van-border-color);
+}
+
+:root {
+  --van-border-color: #ebedf0;
+}
+
+html.dark {
+  --van-border-color: #4c4d4f;
+}
