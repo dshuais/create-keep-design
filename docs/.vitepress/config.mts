@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-12 15:31:04
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-15 15:04:22
+ * @LastEditTime: 2024-01-16 16:09:18
  * @description: 心平气和
  */
 import { defineConfig } from 'vitepress'
@@ -11,7 +11,7 @@ import { mdPlugin } from './config/plugins'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Keep Design",
+  title: 'Keep Design',
   description: "UI Components built on Vue 3",
   themeConfig: {
     logo: "/image/logo.png",
@@ -26,8 +26,8 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024-PRESENT <a href="https://github.com/dshuais">dshuais</a>'
+      message: 'Released under the MIT License. Based on <a target="_blank" href="https://create-keep-design.dshuais.com/">create-keep-design@1.0.0</a>',
+      copyright: 'Copyright © 2024-PRESENT <a target="_blank" href="https://github.com/dshuais">dshuais</a>'
     },
 
     // 页面修改链接
