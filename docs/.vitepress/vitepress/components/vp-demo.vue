@@ -72,7 +72,7 @@ const copyCode = async () => {
 const [sourceVisible, toggleSourceVisible] = useToggle()
 
 
-const demoSourceUrl = 'https://github.com/'
+const demoSourceUrl = `https://github.com/dshuais/create-keep-design/edit/main/docs/examples/${props.path}.vue`
 
 </script>
 <template>

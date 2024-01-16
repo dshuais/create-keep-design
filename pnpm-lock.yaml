@@ -126,8 +126,6 @@ importers:
         specifier: ^1.8.27
         version: 1.8.27(typescript@5.3.3)
 
-  docs: {}
-
   packages/KEEP_DESIGN: {}
 
   packages/create-keep-design:
