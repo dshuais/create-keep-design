@@ -27,3 +27,6 @@ dist-ssr
 
 # 单元测试报告
 packages/keep-design/coverage/
+
+# vitepress 构建文件
+./docs/.vitepress/cache
