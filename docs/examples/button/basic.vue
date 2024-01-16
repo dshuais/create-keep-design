@@ -1,9 +1,8 @@
 <script lang="ts" setup>
+import { KButton } from 'keep-design'
 
 </script>
 <template>
-  <div>
-    按钮基础组件
-  </div>
+  <k-button>Default</k-button>
+  <k-button type="primary">Primary</k-button>
 </template>
-<style scoped lang="scss"></style>

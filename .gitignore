@@ -29,4 +29,4 @@ dist-ssr
 packages/keep-design/coverage/
 
 # vitepress 构建文件
-./docs/.vitepress/cache
+docs/.vitepress/cache

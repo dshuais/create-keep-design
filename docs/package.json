@@ -19,8 +19,5 @@
         "@algolia/client-search"
       ]
     }
-  },
-  "devDependencies": {
-    "@iconify-json/ri": "^1.1.19"
   }
 }

@@ -19,6 +19,9 @@
 .keep-button:hover {
   color: #000;
 }
+.keep-button + .keep-button {
+  margin-left: 12px;
+}
 
 .keep-button--primary {
   color: #fff;

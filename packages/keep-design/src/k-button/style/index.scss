@@ -18,6 +18,9 @@
   &:hover {
     color: #000;
   }
+  &+& {
+    margin-left: 12px;
+  }
 }
 
 .keep-button--primary {
