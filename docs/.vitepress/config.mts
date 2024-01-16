@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-12 15:31:04
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-16 16:09:18
+ * @LastEditTime: 2024-01-16 17:47:55
  * @description: 心平气和
  */
 import { defineConfig } from 'vitepress'
@@ -26,7 +26,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Released under the MIT License. Based on <a target="_blank" href="https://create-keep-design.dshuais.com/">create-keep-design@1.0.0</a>',
+      message: 'Released under the MIT License. Powered by <a target="_blank" href="https://create-keep-design.dshuais.com/">create-keep-design@1.0.0</a>',
       copyright: 'Copyright © 2024-PRESENT <a target="_blank" href="https://github.com/dshuais">dshuais</a>'
     },
 
