@@ -2,7 +2,7 @@
  * @Author: dushuai
  * @Date: 2024-01-15 12:27:21
  * @LastEditors: dushuai
- * @LastEditTime: 2024-01-15 18:16:15
+ * @LastEditTime: 2024-01-16 12:03:37
  * @description: 自写 Demo 容器
 -->
 <script lang="ts" setup>
@@ -12,6 +12,8 @@ import Example from './demo/vp-example.vue'
 import SourceCode from './demo/vp-source-code.vue'
 import { CaretTop } from '@element-plus/icons-vue'
 import { useClipboard, useToggle } from '@vueuse/core'
+import { ElMessage, ElCollapseTransition, ElTooltip, ElIcon } from 'element-plus'
+import 'element-plus/theme-chalk/index.css'
 
 type DemoProps = {
   source: string,
@@ -40,9 +42,6 @@ const decodedSource = computed<string>(() => decodeURIComponent(props.source))
  * info
  */
 const decodedDescription = computed<string>(() => decodeURIComponent(props.description))
-
-// console.log(demos, sources);
-
 
 const { copy, isSupported } = useClipboard({
   source: decodeURIComponent(props.rawSource),
@@ -113,7 +112,7 @@ const demoSourceUrl = 'https://github.com/'
         <SourceCode v-show="sourceVisible" :source="source" />
       </ElCollapseTransition>
 
-      <Transition name="k-fade-in-linear">
+      <Transition name="el-fade-in-linear">
         <div v-show="sourceVisible" class="example-float-control" tabindex="0" role="button"
           @click="toggleSourceVisible()">
           <ElIcon :size="16">

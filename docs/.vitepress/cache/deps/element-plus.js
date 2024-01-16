@@ -1,4 +1,7 @@
 import {
+  isVue2
+} from "./chunk-SVN6YGAJ.js";
+import {
   arrow_down_default,
   arrow_left_default,
   arrow_right_default,
@@ -42,9 +45,6 @@ import {
   zoom_in_default,
   zoom_out_default
 } from "./chunk-E3IKQGFT.js";
-import {
-  isVue2
-} from "./chunk-SVN6YGAJ.js";
 import {
   Comment,
   Fragment,
@@ -60269,4 +60269,4 @@ normalize-wheel-es/dist/index.mjs:
    * @license Modernizr 3.0.0pre (Custom Build) | MIT
    *)
 */
-//# sourceMappingURL=element-plus_es.js.map
+//# sourceMappingURL=element-plus.js.map

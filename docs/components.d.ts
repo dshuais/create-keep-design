@@ -7,9 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElCollapseTransition: typeof import('element-plus/es')['ElCollapseTransition']
-    ElIcon: typeof import('element-plus/es')['ElIcon']
-    ElTooltip: typeof import('element-plus/es')['ElTooltip']
     IRiCodeLine: typeof import('~icons/ri/code-line')['default']
     IRiFileCopyLine: typeof import('~icons/ri/file-copy-line')['default']
     IRiGithubLine: typeof import('~icons/ri/github-line')['default']
