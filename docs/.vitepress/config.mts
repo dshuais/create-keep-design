@@ -44,16 +44,16 @@ export default defineConfig({
     },
 
     // 配置algolia
-    // algolia: {
-    //   appId: "SEZUOVJ0WE",
-    //   apiKey: "86302ba55696b811ec708fcf5dcb2d44",
-    //   indexName: "danmaku-vue.dshuais",
-    // },
+    algolia: {
+      appId: "PGYF1ICPJT",
+      apiKey: "d62b007f25e78a60a6de269b86363d89",
+      indexName: "keep-design-dshuais",
+    },
     // 本地搜索
-    search: {
-      provider: "local",
-      options: {}
-    }
+    // search: {
+    //   provider: "local",
+    //   options: {}
+    // }
   },
 
   // 开启最后更改时间
